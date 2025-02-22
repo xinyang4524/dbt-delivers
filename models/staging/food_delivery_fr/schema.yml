@@ -3,6 +3,8 @@ version: 2
 models:
   - name: stg_food_delivery_fr__food_delivery
     description: "Staging model for food delivery source data."
+    config:
+      identifier: food_delivery
     columns:
       - name: id_order
         description: "Unique order identifier"
