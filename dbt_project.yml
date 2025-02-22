@@ -1,4 +1,4 @@
-name: my_new_project
+name: food_delivery
 version: '1.0'
 
 # This setting configures which "profile" dbt uses for this project.
@@ -17,6 +17,6 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  my_new_project:
+  food_delivery:
     example:
       +materialized: table
