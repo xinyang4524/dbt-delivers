@@ -1,0 +1,52 @@
+version: 2
+
+sources:
+  - name: food_delivery_fr
+    description: "Source data containing food delivery information."
+    tables:
+      - name: food_delivery
+        description: "This model contains food delivery order information."
+        columns:
+          - name: _row
+            description: "Row identifier (internal use)"
+          - name: _fivetran_synced
+            description: "Timestamp indicating the last sync time from Fivetran"
+          - name: order_total_promo
+            description: "Total promotional discount applied to the order"
+          - name: order_item_delivery_address_city
+            description: "City of the delivery address for the order item"
+          - name: order_currency
+            description: "Currency used for the order"
+          - name: merchant_name
+            description: "Name of the merchant fulfilling the order"
+          - name: order_total_fees
+            description: "Total fees applied to the order"
+          - name: order_time
+            description: "Timestamp indicating when the order was placed"
+          - name: order_processing_fee
+            description: "Processing fee associated with the order"
+          - name: payment_method_name
+            description: "Payment method used for the order"
+          - name: seller_category_name
+            description: "Category of the seller"
+          - name: order_total_paid
+            description: "Total amount paid for the order"
+          - name: order_item_delivery_address_subregion
+            description: "Subregion of the delivery address for the order item"
+          - name: order_date
+            description: "Date when the order was placed"
+          - name: id_order
+            description: "Unique identifier for the order"
+            tests:
+              - unique
+              - not_null
+          - name: order_delivery_fee
+            description: "Delivery fee applied to the order"
+          - name: order_item_delivery_address_region
+            description: "Region of the delivery address for the order item"
+          - name: seller_name
+            description: "Name of the seller"
+          - name: random_id
+            description: "Randomly generated identifier for internal use"
+          - name: customer_gende
+            description: "Gender of the customer (possible typo in column name)"

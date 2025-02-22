@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_food_delivery_fr__food_delivery
+    description: "Staging model for food delivery source data."
+    columns:
+      - name: id_order
+        description: "Unique order identifier"
+        tests:
+          - unique
+          - not_null
+      - name: order_date
+        description: "Order date of the delivery"
