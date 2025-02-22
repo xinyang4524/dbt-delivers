@@ -2,11 +2,11 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
+    - name: first 
       description: "A starter dbt model"
-      config:
-        alias: first      
-        +materialized: table 
+      config:  
+        identifier: food_delivery
+        materialized: table 
       columns:
           - name: id
             description: "The primary key for this table"
@@ -14,11 +14,11 @@ models:
                 - unique
 
 
-    - name: my_second_dbt_model
+    - name: second
       description: "A starter dbt model"
-      config:
-        alias: second        
-        +materialized: view                
+      config:     
+        identifier: food_delivery
+        materialized: view                
       columns:
           - name: id
             description: "The primary key for this table"
